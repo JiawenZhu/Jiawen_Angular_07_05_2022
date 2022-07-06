@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>initalation</title>
+<link>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>first homework</title>
+<link rel="stylesheet" href="./style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+  integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-  
+  <h1>Sign up</h1>
+  <form class="ui form container">
+    <div class="field">
+      <div class="two fields">
+        <div class="field">
+          <input type="text" name="first-name" placeholder="First Name">
+        </div>
+        <div class="field">
+          <input type="text" name="last-name" placeholder="Last Name">
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <div class="wide field">
+        <input type="text" name="phone" placeholder="Mobile No.">
+      </div>
+    </div>
+    <div class="field">
+      <div class="wide field">
+        <input type="text" name="email" placeholder="Email Address">
+      </div>
+    </div>
+    <div class="field">
+      <div class="two fields">
+        <div class="field">
+          <input type="text" name="password" placeholder="Password">
+        </div>
+        <div class="field">
+          <input type="text" name="password" placeholder="Confirm Password">
+        </div>
+      </div>
+    </div>
+    <div class="ui segment">
+      <div class="field">
+        <div class="ui checkbox">
+          <input type="checkbox" name="gift" tabindex="0">
+          <label>I Agree</label>
+          <input type="checkbox" name="gift" tabindex="0" class="hidden">
+          <p>By clicking <span id="aggreementContent">Registers</span>, you agree to the <span id="aggreementContent2"><a href="http://">Terms and Conditions</a></span> set out by this site, including our Cookie Use.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="ui two primary button" tabindex="0">Register</div>
+    <div class="ui two positive button" tabindex="0">Sign In</div>
+  </form>
 </body>
+
 </html>

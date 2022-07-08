@@ -1,0 +1,31 @@
+.menu{
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  margin-bottom: 0%;
+}
+.backgroundColor__gray{
+  background-color: #c6bfbf;
+}
+.backgroundColor__black{
+  background-color: #000;
+}
+.backgroundColor__green{
+  background-color: #0b4d14;
+}
+.fontColor__white{
+  color: #fff;
+}
+.content{
+  display: flex;
+  flex-flow: row nowrap;
+  /* align-content: stretch; */
+  padding: 0.5% 20% 0 20%;
+}
+@media screen and (max-width: 768px) {
+  .menu{
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+  }
+}

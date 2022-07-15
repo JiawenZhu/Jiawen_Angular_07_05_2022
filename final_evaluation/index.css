@@ -17,16 +17,12 @@ body {
 	height: 100%;
 }
 .movies_section{
-  text-align: center;
+  padding: 200px 100px;
 }
-.movieLists_container {
-	width: 100%;
-	height: 100%;
-	/* padding-top: var(--height-header); */
+#movieLists_container {
 	background-color: blanchedalmond;
-
 	display: flex;
-  flex-flow: column wrap;
+  flex-flow: row nowrap;
 }
 .movie_container{
 

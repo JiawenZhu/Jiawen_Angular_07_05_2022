@@ -14,7 +14,7 @@ export const View = (() => {
         <div class="movie_image">
           <img src="${movie.imgUrl}" id="">
         </div>
-        <div class="movie_title">${movie.title}</div>
+        <div class="movie_title">${movie.name}</div>
         <div class="movie_outlineInfo">${movie.outlineInfo}</div>
     </li>`;
     });

@@ -16,13 +16,14 @@ export const Model = ((api, view) => {
       return this.#movies;
     }
 
-    set movieList(movie) {
-      this.#movies = [...movie];
+    set movieList(movies) {
+      this.#movies = [...movies];
 
       const movieContainer = document.querySelector(view.domstr.movieContainer);
       const tmp = view.createTmp(this.#movies);
       view.render(movieContainer, tmp);
     }
+
   }
 
   const { getMovies } = api;

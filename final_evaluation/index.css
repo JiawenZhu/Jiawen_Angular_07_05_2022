@@ -20,15 +20,24 @@ ul{
 	list-style-type: none;
 }
 .movies_section{
-  padding: 200px 100px;
+  padding: 200px;
 }
 #movieLists_container {
 	background-color: blanchedalmond;
 	display: flex;
   flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 .movie_block{
   padding: 10px;
+}
+.movie_title{
+	color: rgb(55, 52, 52);
+}
+.movie_outlineInfo{
+	color: rgb(101, 97, 97);
 }
 .button_container{
   display: flex;

@@ -1,14 +1,15 @@
 import { Model } from "../Model/index.js";
 import { View } from "../View/index.js";
-const displayNumber = 4;
+const DISPLAYANUMBER = 4;
 
 const Controller = ((model, view) => {
   const state = new model.State();
   let totalNumMovies = 0;
+  
   const display = (index) => {
     model.getMovies().then((movies) => {
       totalNumMovies = movies.length;
-      const initMovies = movies.slice(index - displayNumber, index);
+      const initMovies = movies.slice(index - DISPLAYANUMBER, index);
       state.movieList = [...initMovies];
     });
   };
@@ -16,20 +17,20 @@ const Controller = ((model, view) => {
   const displayOnClick = () => {
     const rightBtn = document.querySelector(view.domstr.rightBtn);
     const leftBtn = document.querySelector(view.domstr.leftBtn);
-    let curIndex = displayNumber;
+    let curIndex = DISPLAYANUMBER;
 
     rightBtn.addEventListener("click", (e) => {
       display(++curIndex);
       if(curIndex > totalNumMovies){
-        curIndex = displayNumber;
+        curIndex = DISPLAYANUMBER;
         display(curIndex);
       }
     });
 
     leftBtn.addEventListener("click", (e) => {
       display(--curIndex);
-      if(curIndex <= displayNumber){
-        curIndex = displayNumber;
+      if(curIndex <= DISPLAYANUMBER){
+        curIndex = DISPLAYANUMBER;
         display(curIndex);
         window.alert("this is the end");
       }
@@ -38,7 +39,7 @@ const Controller = ((model, view) => {
 
   const bootstrap = () => {
     // initial display
-    display(displayNumber);
+    display(DISPLAYANUMBER);
     displayOnClick();
   };
 

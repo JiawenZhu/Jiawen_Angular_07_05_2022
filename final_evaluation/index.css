@@ -17,7 +17,7 @@ body {
 	height: 100%;
 }
 ul{
-  list-style-type: none;
+	list-style-type: none;
 }
 .movies_section{
   padding: 200px 100px;
@@ -35,7 +35,7 @@ ul{
   flex-flow: row nowrap;
   justify-content: space-between;
 }
-.btn_arrow{
+.btn_left, .btn_right{
   position: -webkit-sticky;
   background-color: transparent;
 }

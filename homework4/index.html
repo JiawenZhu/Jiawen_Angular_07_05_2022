@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script async >
+window.onload=()=>{
+    const select1 = document.getElementById("first")
+    const select2 = document.getElementById("second")
+    const Options =   {
+        "a":"apple",
+        "b":"banana",
+        "c":"city",
+        "d":"dom",
+        "e":"end",
+        "f":"forEach",
+        "g":"gesdrwesf"
+    }
+    for(Option in Options){
+        var option = document.createElement("option")
+        var option2 = document.createElement("option")
+        option.value=Option
+        option2.value=Options[Option]
+        option.text=Option
+        option2.text=Options[Option]
+        select1.append(option)
+        select2.append(option2)
+    }
+    select1.onchange = (event) => {
+            select2.value=Options[event.target.value]
+    }
+} 
+
+</script>
+</head>
+<body>
+<select name="first" id="first"></select>
+<select name="second" id="second"></select>
+</body>
+</html>
